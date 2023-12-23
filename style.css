@@ -25,23 +25,63 @@ body {
   place-content: center;
 }
 
+li {
+  list-style: none;
+}
+
 /*Container*/
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 /*Description*/
 .description h1 {
   color: var(--primary-very-dark-magenta);
   font-size: 3rem;
+  max-width: 15ch;
 }
 
 .description p {
   color: var(--neutral-dark-grayish-magenta);
   font-weight: 500;
-  margin-top: 20px;
+  line-height: 1.2;
+  margin-top: 18px;
+  max-width: 40ch;
+}
+
+/*Assessment*/
+.assessment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px;
+}
+
+.assessment li {
+  background-color: var(--neutral-light-grayish-magenta);
+  border-radius: 5px;
+  padding: 15px 25px;
+  padding-right: 60px;
+}
+
+.assessment li p {
+  color: var(--primary-very-dark-magenta);
+  display: inline;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.assessment li:nth-child(1) {
+  align-self: start;
+}
+.assessment li:nth-child(2) {
+  align-self: center;
+}
+.assessment li:nth-child(3) {
+  align-self: end;
 }
 
 /*Footer*/
