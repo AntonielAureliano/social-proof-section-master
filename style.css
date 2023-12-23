@@ -17,8 +17,31 @@
 }
 
 body {
+  display: grid;
   font-family: var(--font-family-default);
   font-size: 0.9375rem;
+  justify-content: center;
+  min-height: 70vh;
+  place-content: center;
+}
+
+/*Container*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+}
+
+/*Description*/
+.description h1 {
+  color: var(--primary-very-dark-magenta);
+  font-size: 3rem;
+}
+
+.description p {
+  color: var(--neutral-dark-grayish-magenta);
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 /*Footer*/
