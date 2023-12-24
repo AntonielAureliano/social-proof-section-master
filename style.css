@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   display: grid;
   font-family: var(--font-family-default);
-  font-size: 0.9375rem;
+  font-size: 1rem;
   justify-content: center;
   min-height: 100vh;
   place-content: top;
@@ -92,6 +92,7 @@ li {
 .depositions {
   display: flex;
   gap: 30px;
+  grid-column: 1 / -1;
 }
 
 .grid {
@@ -101,11 +102,23 @@ li {
 
 .depositions-perfil {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+}
+
+.depositions-perfil img {
+  border-radius: 50%;
+  max-width: 40px;
 }
 
 .depositions-perfil span {
   grid-column: 2;
+}
+
+.depositions-perfil h3 {
+  color: var(--neutral-white);
+}
+
+.grid p {
+  max-width: 50ch;
 }
 
 /*Footer*/
