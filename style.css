@@ -93,6 +93,7 @@ li {
   display: flex;
   gap: 30px;
   grid-column: 1 / -1;
+  max-height: 300px;
 }
 
 .grid {
@@ -130,9 +131,19 @@ li {
 }
 
 .grid p {
-  max-width: 29ch;
+  max-width: 30ch;
   color: var(--neutral-white);
   line-height: 1.4;
+}
+
+.grid:nth-child(1) {
+  place-self: start;
+}
+.grid:nth-child(2) {
+  place-self: center;
+}
+.grid:nth-child(3) {
+  place-self: end;
 }
 
 /*Footer*/
