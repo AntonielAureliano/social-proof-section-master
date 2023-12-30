@@ -65,7 +65,7 @@ li {
   color: var(--neutral-dark-grayish-magenta);
   font-weight: 500;
   line-height: 1.3;
-  margin-top: 18px;
+  margin-top: 20px;
   max-width: 40ch;
 }
 
@@ -78,6 +78,8 @@ li {
   }
   .description p {
     text-align: center;
+    margin: 20px auto;
+    max-width: 30ch;
   }
 }
 
@@ -112,6 +114,16 @@ li {
 }
 .assessment li:nth-child(3) {
   align-self: end;
+}
+
+@media screen and (max-width: 375px) {
+  .assessment {
+    margin: 20px 0 0 0;
+  }
+  .assessment li {
+    align-self: center;
+    padding: 15px 25px;
+  }
 }
 
 /*Depositions*/
@@ -170,6 +182,15 @@ li {
 }
 .grid:nth-child(3) {
   place-self: end;
+}
+
+@media screen and (max-width: 375px) {
+  .depositions {
+    flex-direction: column;
+  }
+  .grid {
+    place-self: center !important;
+  }
 }
 
 /*Footer*/
