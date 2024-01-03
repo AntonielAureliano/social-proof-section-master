@@ -94,6 +94,7 @@ li {
   background-color: var(--neutral-light-grayish-magenta);  
   border-radius: 5px;
   display: flex;
+  width: 410px;
   padding: 15px 25px;
   padding-right: 60px;
 }
@@ -103,6 +104,7 @@ li {
   font-weight: 700;
   font-size: 1rem;
   margin-left: 20px;
+  
 }
 
 .assessment li:nth-child(1) {
