@@ -42,8 +42,7 @@ li {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 80px;
-  max-width: 1000px;
+  margin: 80px 0 20px 0;
 }
 
 @media screen and (max-width: 375px) {
@@ -147,7 +146,7 @@ li {
   display: flex;
   gap: 30px;
   grid-column: 1 / -1;
-  max-height: 300px;
+  max-height: 240px;
 }
 
 .grid {
@@ -208,6 +207,10 @@ li {
   }
   .grid {
     place-self: center !important;
+  }
+
+  .grid p {
+    max-width: 27ch;
   }
 }
 
